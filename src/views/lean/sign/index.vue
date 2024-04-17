@@ -101,12 +101,12 @@
       <el-table-column label="用户URL" align="center" prop="userSignUrl" />
       <el-table-column label="创建时间" align="center" prop="gmtCreat" width="180">
         <template slot-scope="scope">
-          <span>{{ parseTime(scope.row.gmtCreat, '{y}-{m}-{d}') }}</span>
+          <span>{{ parseTime(scope.row.gmtCreat, '{y}-{m}-{d} {h}:{i}:{s}') }}</span>
         </template>
       </el-table-column>
       <el-table-column label="更新时间" align="center" prop="gmtModified" width="180">
         <template slot-scope="scope">
-          <span>{{ parseTime(scope.row.gmtModified, '{y}-{m}-{d}') }}</span>
+          <span>{{ parseTime(scope.row.gmtModified, '{y}-{m}-{d} {h}:{i}:{s}') }}</span>
         </template>
       </el-table-column>
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
